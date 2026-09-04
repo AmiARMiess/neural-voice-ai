@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NeuralVoice AI - Voice AI That Thinks at the Speed of Light</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="nav-brand">
+          <div class="logo">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <rect width="32" height="32" rx="8" fill="url(#gradient)" />
+              <path
+                d="M10 16C10 14.5 11.5 13 13 13H19C20.5 13 22 14.5 22 16V20C22 21.5 20.5 23 19 23H13C11.5 23 10 21.5 10 20V16Z"
+                fill="white"
+              />
+              <path
+                d="M16 8V13M16 23V28"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <defs>
+                <linearGradient id="gradient" x1="0" y1="0" x2="32" y2="32">
+                  <stop stop-color="#6366F1" />
+                  <stop offset="1" stop-color="#8B5CF6" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <span>NeuralVoice AI</span>
+          </div>
+        </div>
+        <div class="nav-links">
+          <a href="#voices">Voices</a>
+          <a href="#api">API</a>
+          <a href="#docs">Docs</a>
+          <a href="#pricing">Pricing</a>
+        </div>
+        <button class="btn-primary">Get Early Access</button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero-title">
+          Voice AI That Thinks<br />at the Speed of Light
+        </h1>
+        <p class="hero-subtitle">
+          Unlock ultra-low latency, natural text-to-speech for your apps.
+        </p>
+
+        <div class="demo-box">
+          <textarea
+            id="textInput"
+            placeholder="Type or paste your text to experience true low-latency synthesis..."
+          ></textarea>
+          <button id="generateBtn" class="btn-generate">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+              <path
+                d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"
+              ></path>
+            </svg>
+            Generate Audio
+          </button>
+        </div>
+
+        <!-- Floating Elements -->
+        <div class="floating-elements">
+          <div class="float-item delay-1">🎙️</div>
+          <div class="float-item delay-2">🔊</div>
+          <div class="float-item delay-3">⚡</div>
+          <div class="float-item delay-4">🎵</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trusted By -->
+    <section class="trusted-by">
+      <div class="container">
+        <div class="logo-grid">
+          <div class="logo-item">Sedgwick</div>
+          <div class="logo-item">Reddit</div>
+          <div class="logo-item">Calendly</div>
+          <div class="logo-item">OM1</div>
+          <div class="logo-item">Huckberry</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features" id="features">
+      <div class="container">
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <circle cx="20" cy="20" r="20" fill="url(#grad1)" />
+                <path
+                  d="M20 10C14.48 10 10 14.48 10 20s4.48 10 10 10 10-4.48 10-10-4.48-10-10-10zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                  fill="white"
+                />
+                <circle cx="20" cy="20" r="4" fill="white" />
+                <defs>
+                  <linearGradient id="grad1" x1="0" y1="0" x2="40" y2="40">
+                    <stop stop-color="#6366F1" />
+                    <stop offset="1" stop-color="#8B5CF6" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <h3>Natural Voice Generation</h3>
+            <p>
+              Create expressive, natural voice generation and natural voice
+              generator with human-like intonation.
+            </p>
+            <div class="audio-demo">
+              <button class="play-btn">▶ Play</button>
+              <div class="waveform">
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+              </div>
+              <span class="duration">0:20</span>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <circle cx="20" cy="20" r="20" fill="url(#grad2)" />
+                <path
+                  d="M12 20c0-4.42 3.58-8 8-8s8 3.58 8 8-3.58 8-8 8-8-3.58-8-8z"
+                  stroke="white"
+                  stroke-width="2"
+                />
+                <circle cx="20" cy="20" r="3" fill="white" />
+                <defs>
+                  <linearGradient id="grad2" x1="0" y1="0" x2="40" y2="40">
+                    <stop stop-color="#8B5CF6" />
+                    <stop offset="1" stop-color="#A78BFA" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <h3>Specific Accents</h3>
+            <p>
+              Fine generation with specific accents and emotion. Choose from 50+
+              regional accents worldwide.
+            </p>
+            <select class="accent-select">
+              <option>British English</option>
+              <option>American English</option>
+              <option>Australian</option>
+              <option>Indian</option>
+            </select>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <circle cx="20" cy="20" r="20" fill="url(#grad3)" />
+                <path
+                  d="M20 12c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"
+                  fill="white"
+                />
+                <path
+                  d="M20 16c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"
+                  fill="white"
+                />
+                <defs>
+                  <linearGradient id="grad3" x1="0" y1="0" x2="40" y2="40">
+                    <stop stop-color="#EC4899" />
+                    <stop offset="1" stop-color="#F472B6" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <h3>Emotion Control</h3>
+            <p>
+              Control precise emotions, control and interweave emotion reactions
+              in real-time.
+            </p>
+            <div class="emotion-controls">
+              <button class="emotion-btn active">Happy</button>
+              <button class="emotion-btn">Sad</button>
+              <button class="emotion-btn">Excited</button>
+              <button class="emotion-btn">Calm</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="chart-container">
+              <div class="bar-chart" id="barChart"></div>
+            </div>
+          </div>
+          <div class="stat-item large">
+            <div class="stat-value">100ms</div>
+            <div class="stat-label">Latency</div>
+            <div class="waveform-mini">
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+            </div>
+          </div>
+          <div class="stat-item large">
+            <div class="stat-value">99.9%</div>
+            <div class="stat-label">Up-time</div>
+            <div class="waveform-mini">
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="line-chart" id="lineChart"></div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">99.9%</div>
+            <div class="stat-label">Leak-time</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">40ms</div>
+            <div class="stat-label">Top-time</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing" id="pricing">
+      <div class="container">
+        <h2 class="section-title">Simple, Transparent Pricing</h2>
+        <p class="section-subtitle">
+          Unlock ultra-low latency, natural text-to-speech for your apps.
+        </p>
+
+        <!-- Billing Toggle -->
+        <div class="billing-toggle">
+          <span class="toggle-label monthly-label active">Monthly</span>
+          <label class="toggle-switch">
+            <input type="checkbox" id="billingToggle" />
+            <span class="toggle-slider"></span>
+          </label>
+          <span class="toggle-label yearly-label">
+            Yearly
+            <span class="discount-badge">Save 20%</span>
+          </span>
+        </div>
+
+        <div class="pricing-grid">
+          <div class="pricing-card" data-monthly="0" data-yearly="0">
+            <h3>Starter</h3>
+            <div class="price">
+              $0<span class="billing-period">/month</span>
+            </div>
+            <ul class="features-list">
+              <li>✓ What's included</li>
+              <li>✓ Perfect integrations</li>
+              <li>✓ Custom Tracking</li>
+              <li>✓ Community Support</li>
+            </ul>
+            <button class="btn-outline">Get Started</button>
+          </div>
+
+          <div class="pricing-card featured" data-monthly="19" data-yearly="15">
+            <div class="badge">Most Popular</div>
+            <h3>Pro</h3>
+            <div class="price">
+              $19<span class="billing-period">/month</span>
+            </div>
+            <ul class="features-list">
+              <li>✓ What's included</li>
+              <li>✓ Pro fan integration</li>
+              <li>✓ Collaboration Adams</li>
+              <li>✓ Custom Tracking</li>
+              <li>✓ Priority Support</li>
+            </ul>
+            <button class="btn-primary">Get Started</button>
+          </div>
+
+          <div class="pricing-card" data-monthly="120" data-yearly="96">
+            <h3>Enterprise</h3>
+            <div class="price">
+              $120<span class="billing-period">/month</span>
+            </div>
+            <ul class="features-list">
+              <li>✓ What's included</li>
+              <li>✓ Pro fan integration</li>
+              <li>✓ Collaboration & Antomocation</li>
+              <li>✓ Enterprise/Startplace</li>
+              <li>✓ 24/7 Support</li>
+            </ul>
+            <button class="btn-outline">Get Started</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+      <div class="container">
+        <h2>Ready to Get Started?</h2>
+        <p>Join thousands of developers building with NeuralVoice AI</p>
+        <div class="cta-form">
+          <input
+            type="email"
+            placeholder="Enter your access email"
+            id="emailInput"
+          />
+          <button class="btn-primary" id="signupBtn">Sign Up</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="logo">
+              <svg width="24" height="24" viewBox="0 0 32 32" fill="none">
+                <rect width="32" height="32" rx="8" fill="url(#gradient)" />
+                <path
+                  d="M10 16C10 14.5 11.5 13 13 13H19C20.5 13 22 14.5 22 16V20C22 21.5 20.5 23 19 23H13C11.5 23 10 21.5 10 20V16Z"
+                  fill="white"
+                />
+              </svg>
+              <span>NeuralVoice AI</span>
+            </div>
+            <p>Voice AI that thinks at the speed of light.</p>
+          </div>
+          <div class="footer-links">
+            <div class="footer-col">
+              <h4>Product</h4>
+              <a href="#">Voices</a>
+              <a href="#">API</a>
+              <a href="#">Docs</a>
+              <a href="#">Pricing</a>
+            </div>
+            <div class="footer-col">
+              <h4>Company</h4>
+              <a href="#">About</a>
+              <a href="#">Blog</a>
+              <a href="#">Careers</a>
+              <a href="#">Contact</a>
+            </div>
+            <div class="footer-col">
+              <h4>Legal</h4>
+              <a href="#">Privacy</a>
+              <a href="#">Terms</a>
+              <a href="#">Security</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© Copyright 2024 NeuralVoice AI, Inc.</p>
+          <div class="social-links">
+            <a href="#">Twitter</a>
+            <a href="#">GitHub</a>
+            <a href="#">Discord</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
